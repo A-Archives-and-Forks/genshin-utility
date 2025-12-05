@@ -12,11 +12,11 @@ Sdk::Sdk() {
 void Sdk::InitGenshinImpact() {
   const auto mod = (uintptr_t)GetModuleHandleA(nullptr);
 
-  funcs_.set_field_of_view = mod + 0x1027470;
-  funcs_.set_target_frame_rate = mod + 0x123dd80;
-  funcs_.quit = mod + 0x102be90;
-  funcs_.set_vsync_count = mod + 0x8918b0;
-  funcs_.set_fog = mod + 0x890920;
+  funcs_.set_field_of_view = mod + 0x10407c0;
+  funcs_.set_target_frame_rate = mod + 0x125a060;
+  funcs_.quit = mod + 0x10451f0;
+  funcs_.set_vsync_count = mod + 0x89dd90;
+  funcs_.set_fog = mod + 0x89ce00;
 
   is_star_rail_ = false;
 }

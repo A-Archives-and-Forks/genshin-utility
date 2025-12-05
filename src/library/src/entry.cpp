@@ -2,11 +2,11 @@
 
 #include <core/gu.hpp>
 
-using namespace std::chrono_literals;
-
 namespace {
 
 void Init() {
+  using namespace std::chrono_literals;
+  
   while (GetModuleHandleA("StarRail.exe") && (!GetModuleHandleA("UnityPlayer.dll") || !GetModuleHandleA("GameAssembly.dll")))
     std::this_thread::sleep_for(10ms);
 
